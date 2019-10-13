@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+   function validate()
+   {
+    var p1 = document.getElementById("id1").value;
+    var p2 = document.getElementById("id2").value;
+
+    if(p1==null || p1=="")
+    {
+        alert("enter password");
+    }
+    else if(p2==null || p2=="")
+    {
+        alert("enter reenter  password");
+    }
+    else if(p1==p2)
+    {
+        alert("welcome");
+    }
+    else
+    {
+        alert("sorry");
+    }
+   }
+    </script>
+</head>
+<body>
+    <form action="#" method="post" >
+       <div>
+           <label for="enter password">enter password</label>
+           <input type="password" id="id1">
+       </div>
+       <div>
+            <label for="reenter password">reenter password</label>
+            <input type="password" id="id2">
+        </div>
+        <input type="button" value="sumbit" onclick="validate()">
+
+    </form>
+</body>
+</html>
